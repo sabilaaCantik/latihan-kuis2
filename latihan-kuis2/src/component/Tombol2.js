@@ -1,13 +1,16 @@
 import {useState} from 'react'
 
 function Tombol2() {
-    const [teks, setTeks] = useState("Seli");
+  const [teks, setTeks] = useState("Seli");
   const [warna, setWarna] = useState("#f00");
 
   function handleClick() {
     setTeks("Nurul");
     setWarna("#00f");
+
   }
+
+  
 
   return (
     <button
@@ -17,7 +20,7 @@ function Tombol2() {
         borderRadius: 32,
         padding: "8 16"
       }}
-      onClick={handleClick}
+      onClick={handleClick()} 
     >
       {teks}
     </button>
